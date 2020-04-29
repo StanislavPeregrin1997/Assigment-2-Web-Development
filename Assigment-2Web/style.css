@@ -135,6 +135,13 @@ p {
     text-align: left;
 }
 /* portfolio 2 */
+.fullwidthtop {
+  text-align: center;
+  margin: 0 auto;
+}
+.fullwidthtop p {
+  cursor: pointer;
+}
 .inner-container {
   width: 100%;
   max-width: 1366px;
@@ -147,10 +154,13 @@ p {
   margin: 10px;
   min-height: 300px;
   transition: 1s;
+  background-position: center;
 }
 .overlay {
-  color:rgba(255, 255, 255, 0.5);
+  background-color:rgba(0, 0, 0, 0.5);
   opacity: 0;
+  min-height: 300px;
+  transition: 1s;
   }
 .section:hover .overlay {
   opacity: 1;
@@ -162,7 +172,7 @@ p {
   background-color: transparent;
 }
 .section-image img {
-  margin-left: 30%;
+  margin-left: 25%;
   
 }
 .section-text {
@@ -171,6 +181,11 @@ p {
   bottom: 40px;
   opacity: 0;
   transition: 1s;
+  color: #fff;
+}
+.section-text a:link, .section-text a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 #section-1 {
   background-image: url(assets/as2.png);
@@ -189,5 +204,11 @@ p {
   background-image: url(assets/week9.png);
 }
 #section-3:hover .section-image, #section-3:hover .section-text {
+  opacity: 1;
+}
+#section-4 {
+  background-image: url(assets/jspic.png);
+}
+#section-4:hover .section-image, #section-4:hover .section-text {
   opacity: 1;
 }
