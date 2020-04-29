@@ -128,6 +128,9 @@ p {
     width: 100%;
     text-align: left;
 }
+#p1 {
+  text-align: center;
+}
 #p2 {
     text-align: center;
 }
