@@ -85,6 +85,7 @@ body{
   width: 50%;
   margin-bottom: 20px;
 }
+/*
 .img-text-wrapper .subtitle {
   transition: 1s;
   font-weight: 600;
@@ -97,6 +98,7 @@ body{
 .img-darken {
   transition: 1s;
 }
+ */
 
 /* profile image */
 #profile-image {
@@ -131,4 +133,61 @@ p {
 }
 #p3 {
     text-align: left;
+}
+/* portfolio 2 */
+.inner-container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+}
+.section {
+  flex: 1;
+  background-size: cover;
+  margin: 10px;
+  min-height: 300px;
+  transition: 1s;
+}
+.overlay {
+  color:rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  }
+.section:hover .overlay {
+  opacity: 1;
+}
+.section-image {
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  background-color: transparent;
+}
+.section-image img {
+  margin-left: 30%;
+  
+}
+.section-text {
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  opacity: 0;
+  transition: 1s;
+}
+#section-1 {
+  background-image: url(assets/as2.png);
+}
+/* section 1 when hovered, coma is for this and this , two things 1 ccs  */
+#section-1:hover .section-image, #section-1:hover .section-text {
+  opacity: 1;
+}
+#section-2 {
+  background-image: url(assets/week5.png);
+}
+#section-2:hover .section-image, #section-2:hover .section-text {
+  opacity: 1;
+}
+#section-3 {
+  background-image: url(assets/week9.png);
+}
+#section-3:hover .section-image, #section-3:hover .section-text {
+  opacity: 1;
 }
