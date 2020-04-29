@@ -55,12 +55,12 @@ body{
     color: black;
   }
 /* porfotlio styles */
-.portfolio-items-wrapper {
-  display: flex;
+.porfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .porfolio-item-wrapper {
-    /* position: relative; */
-    flex: 1;
+    position: relative;
 }
 .portfolio-img-background {
     height: 350px;
